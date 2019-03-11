@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewPreparation", "InterviewPreparation\InterviewPreparation.csproj", "{F718852F-32D0-4EEB-97BD-14CE29D3106C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterviewPreparation", "src\InterviewPreparation.csproj", "{F718852F-32D0-4EEB-97BD-14CE29D3106C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
