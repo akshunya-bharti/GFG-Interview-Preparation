@@ -63,7 +63,7 @@ namespace InterviewPreparation.Problems.Mathematical
         }
 
         // Keep on dividig the number by 10, till you get a zero
-        private int Order(int numb)
+        private static int Order(int numb)
         {
             var order = 0;
 
