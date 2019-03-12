@@ -40,5 +40,38 @@ namespace InterviewPreparation.Problems.Mathematical
 
             file.Close();
         }
+
+        public int Power(int numb, int pow)
+        {
+            // any number raised to zero is one
+            if(pow == 0)
+            {
+                return 1;
+            }
+
+            // any number raised to an even power can be split into 2 numbers raised half the power each
+            if(pow%2 ==0)
+            {
+                return Power(numb, pow / 2) * Power(numb, pow / 2);
+            }
+
+            // any number raised to an odd power can be split into...
+            // number multiplied by the 2 numbers raised half the power each
+            return numb * Power(numb, pow / 2) * Power(numb, pow / 2);
+        }
+
+        // Keep on dividig the number by 10, till you get a zero
+        public int Order(int numb)
+        {
+            var order = 0;
+
+            while (numb != 0)
+            {
+                numb = numb / 10;
+                order++;
+            }
+
+            return order;
+        }
     }
 }
