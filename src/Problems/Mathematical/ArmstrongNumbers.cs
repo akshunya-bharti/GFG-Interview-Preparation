@@ -20,15 +20,17 @@ namespace InterviewPreparation.Problems.Mathematical
                 var inputNumber = file.ReadLine();
                 var inputNumberInt = Convert.ToInt32(inputNumber);
 
-                var sumOfCubesOfDigits = 0;
-                foreach (var digit in inputNumber)
+                var order = Order(inputNumberInt);
+                var sum = 0;
+                var temp = inputNumberInt;
+                while(temp != 0)
                 {
-                    var digitInt = Convert.ToInt32(digit.ToString());
-                    var digitCube = (digitInt * digitInt * digitInt);
-                    sumOfCubesOfDigits += digitCube;
+                    var digit = temp % 10;
+                    sum += Power(digit,order);
+                    temp = temp / 10;
                 }
 
-                if (sumOfCubesOfDigits == inputNumberInt)
+                if (sum == inputNumberInt)
                 {
                     Console.WriteLine("Yes");
                 }
@@ -41,7 +43,7 @@ namespace InterviewPreparation.Problems.Mathematical
             file.Close();
         }
 
-        public int Power(int numb, int pow)
+        private static int Power(int numb, int pow)
         {
             // any number raised to zero is one
             if(pow == 0)
@@ -61,7 +63,7 @@ namespace InterviewPreparation.Problems.Mathematical
         }
 
         // Keep on dividig the number by 10, till you get a zero
-        public int Order(int numb)
+        private int Order(int numb)
         {
             var order = 0;
 
