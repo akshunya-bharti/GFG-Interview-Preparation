@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Problems\Mathematical\ArmstrongNumbers.cs" />
     <Compile Include="Problems\Mathematical\BinaryToDecimal.cs" />
+    <Compile Include="Problems\Mathematical\ReverseDigits.cs" />
     <Compile Include="Problems\Mathematical\SumOfDigitsPalindrome.cs" />
     <Compile Include="Problems\Problem.cs" />
     <Compile Include="Program.cs" />
@@ -57,6 +58,7 @@
   <ItemGroup>
     <Content Include="Problems\Mathematical\ArmstrongNumbers.txt" />
     <Content Include="Problems\Mathematical\BinaryToDecimal.txt" />
+    <Content Include="Problems\Mathematical\ReverseDigits.txt" />
     <Content Include="Problems\Mathematical\SumOfDigitsPalindrome.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
