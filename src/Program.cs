@@ -8,7 +8,7 @@ namespace InterviewPreparation
         static void Main(string[] args)
         {
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Mathematical.SumOfDigitsPalindrome();
+            var problem = new Problems.Mathematical.BinaryToDecimal();
 
             try
             {
