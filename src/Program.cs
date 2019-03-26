@@ -13,7 +13,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Mathematical.Factorial();
+            var problem = new Problems.Mathematical.PrimeNumber();
 
             try
             {
