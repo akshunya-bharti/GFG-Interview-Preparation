@@ -9,3 +9,17 @@ https://practice.geeksforgeeks.org/batch/Interview%20Preparation/
 2. Provide the Class name of the problem to the variable 'problem'.
 3. Provide test cases in the file {classname}.txt at the same location as the class file.
 4. Run (Ctrl + F5)
+
+**Points to remember while creating test cases text file:-**
+1. Provide total no of test cases (n) in first line.
+2. From 2nd line onwards provide the test case in each new line.
+3. After reaching the (n+1)th line, provide the expected outputs for the test cases in next n lines.
+<br />e.g. If you have 3 test cases for a program checking the number is even or not, your test file should look like this:-
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No<br />
