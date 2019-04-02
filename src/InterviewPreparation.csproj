@@ -46,6 +46,7 @@
     <Compile Include="Problems\Mathematical\ArmstrongNumbers.cs" />
     <Compile Include="Problems\Mathematical\BinaryToDecimal.cs" />
     <Compile Include="Problems\Mathematical\Factorial.cs" />
+    <Compile Include="Problems\Mathematical\LcmAndGcd.cs" />
     <Compile Include="Problems\Mathematical\PrimeNumber.cs" />
     <Compile Include="Problems\Mathematical\ReverseDigits.cs" />
     <Compile Include="Problems\Mathematical\SumOfDigitsPalindrome.cs" />
@@ -61,6 +62,7 @@
     <Content Include="Problems\Mathematical\ArmstrongNumbers.txt" />
     <Content Include="Problems\Mathematical\BinaryToDecimal.txt" />
     <Content Include="Problems\Mathematical\Factorial.txt" />
+    <Content Include="Problems\Mathematical\LcmAndGcd.txt" />
     <Content Include="Problems\Mathematical\PrimeNumber.txt" />
     <Content Include="Problems\Mathematical\ReverseDigits.txt" />
     <Content Include="Problems\Mathematical\SumOfDigitsPalindrome.txt" />

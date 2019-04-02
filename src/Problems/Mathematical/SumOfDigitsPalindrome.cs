@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace InterviewPreparation.Problems.Mathematical
@@ -7,6 +8,8 @@ namespace InterviewPreparation.Problems.Mathematical
     {
         public override string TestFileName { get; set; } = $"{typeof(SumOfDigitsPalindrome).Name}.txt";
         public override string TestFilePath { get; set; } = $"..{Separator}..{Separator}Problems{Separator}Mathematical{Separator}";
+        public override List<string> TestInputs { get; set; } = new List<string>();
+        public override List<string> TestOutputs { get; set; } = new List<string>();
 
         public override void Execute()
         {
@@ -17,16 +20,19 @@ namespace InterviewPreparation.Problems.Mathematical
 
             for (int i = 0; i < noOfTestCases; i++)
             {
-                var input = Convert.ToInt32(file.ReadLine());
+                var line = file.ReadLine();
+                var input = Convert.ToInt32(line);
                 var sumOfDigits = SumOfDigits(input);
+
+                TestInputs.Add(line);
 
                 if (IsPalindrome(sumOfDigits))
                 {
-                    Console.WriteLine("YES");
+                    TestOutputs.Add("YES");
                 }
                 else
                 {
-                    Console.WriteLine("NO");
+                    TestOutputs.Add("NO");
                 }
             }
                 

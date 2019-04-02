@@ -8,6 +8,8 @@ namespace InterviewPreparation.Problems.Mathematical
     {
         public override string TestFileName { get; set; } = $"{typeof(PrimeNumber).Name}.txt";
         public override string TestFilePath { get; set; } = $"..{Separator}..{Separator}Problems{Separator}Mathematical{Separator}";
+        public override List<string> TestInputs { get; set; } = new List<string>();
+        public override List<string> TestOutputs { get; set; } = new List<string>();
 
         public override void Execute()
         {
@@ -18,15 +20,18 @@ namespace InterviewPreparation.Problems.Mathematical
 
             for (int i = 0; i < noOfTestCases; i++)
             {
-                var input = Convert.ToInt32(file.ReadLine());
+                var line = file.ReadLine();
+                var input = Convert.ToInt32(line);
 
-                if(IsPrime(input))
+                TestInputs.Add(line);
+
+                if (IsPrime(input))
                 {
-                    Console.WriteLine("Yes");
+                    TestOutputs.Add("Yes");
                 }
                 else
                 {
-                    Console.WriteLine("No");
+                    TestOutputs.Add("No");
                 }
             }
 

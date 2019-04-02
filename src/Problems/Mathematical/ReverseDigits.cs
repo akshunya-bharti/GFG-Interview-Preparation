@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace InterviewPreparation.Problems.Mathematical
@@ -7,6 +8,8 @@ namespace InterviewPreparation.Problems.Mathematical
     {
         public override string TestFileName { get; set; } = $"{typeof(ReverseDigits).Name}.txt";
         public override string TestFilePath { get; set; } = $"..{Separator}..{Separator}Problems{Separator}Mathematical{Separator}";
+        public override List<string> TestInputs { get; set; } = new List<string>();
+        public override List<string> TestOutputs { get; set; } = new List<string>();
 
         public override void Execute()
         {
@@ -17,7 +20,9 @@ namespace InterviewPreparation.Problems.Mathematical
 
             for(int i=0; i<noOfTestCases; i++)
             {
-                var input = Convert.ToInt64(file.ReadLine());
+                var line = file.ReadLine();
+                var input = Convert.ToInt64(line);
+                TestInputs.Add(line);
 
                 Int64 output = 0;
                 var temp = input;
@@ -33,7 +38,7 @@ namespace InterviewPreparation.Problems.Mathematical
                     temp = temp / 10;
                 }
 
-                Console.WriteLine(output);
+                TestOutputs.Add(output.ToString());
             }
 
             file.Close();

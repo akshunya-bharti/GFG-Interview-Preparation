@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace InterviewPreparation.Problems.Mathematical
@@ -6,7 +7,9 @@ namespace InterviewPreparation.Problems.Mathematical
     class ArmstrongNumbers : Problem
     {
         public override string TestFileName { get; set; } = $"{typeof(ArmstrongNumbers).Name}.txt";        
-        public override string TestFilePath { get; set; } = $"..{Separator}..{Separator}Problems{Separator}Mathematical{Separator}";        
+        public override string TestFilePath { get; set; } = $"..{Separator}..{Separator}Problems{Separator}Mathematical{Separator}";
+        public override List<string> TestInputs { get; set; } = new List<string>();
+        public override List<string> TestOutputs { get; set; } = new List<string>();
 
         public override void Execute()
         {
@@ -16,9 +19,10 @@ namespace InterviewPreparation.Problems.Mathematical
             int noOfTestCases = Convert.ToInt32(file.ReadLine());
 
             for (int i = 0; i < noOfTestCases; i++)
-            {
-                var inputNumber = file.ReadLine();
-                var inputNumberInt = Convert.ToInt32(inputNumber);
+            {                
+                var line = file.ReadLine();
+                var inputNumberInt = Convert.ToInt32(line);
+                TestInputs.Add(line);
 
                 var order = Order(inputNumberInt);
                 var sum = 0;
@@ -26,17 +30,17 @@ namespace InterviewPreparation.Problems.Mathematical
                 while(temp != 0)
                 {
                     var digit = temp % 10;
-                    sum += Power(digit,order);
+                    sum += Power(digit, order);
                     temp = temp / 10;
                 }
 
                 if (sum == inputNumberInt)
                 {
-                    Console.WriteLine("Yes");
+                    TestOutputs.Add("Yes");
                 }
                 else
                 {
-                    Console.WriteLine("No");
+                    TestOutputs.Add("No");
                 }
             }
 
