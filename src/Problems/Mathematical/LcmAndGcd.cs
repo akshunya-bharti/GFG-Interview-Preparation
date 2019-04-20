@@ -23,13 +23,97 @@ namespace InterviewPreparation.Problems.Mathematical
                 var line = file.ReadLine();
                 TestInputs.Add(line);
 
-                var num2 = Convert.ToInt32(line.Split(' ')[1]);
                 var num1 = Convert.ToInt32(line.Split(' ')[0]);
+                var num2 = Convert.ToInt32(line.Split(' ')[1]);
 
-                var num1PrimeFactors = FindPrimeFactors(num1);
+                //var lcm = LcmAndGcdByPrimeFactors(num1, num2)[0];
+                //var gcd = LcmAndGcdByPrimeFactors(num1, num2)[1];
+
+                var lcm = LcmAndGcdByEuclideanAlgo(num1, num2)[0];
+                var gcd = LcmAndGcdByEuclideanAlgo(num1, num2)[1];
+
+                TestOutputs.Add($"{lcm} {gcd}");
             }
 
             file.Close();
+        }
+
+        private static long[] LcmAndGcdByEuclideanAlgo(long num1, long num2)
+        {
+            if (num1 == num2)
+            {
+                return new long[2] {num1, num1};
+            }
+
+            if (num1 > num2)
+            {
+                if (num1 % num2 == 0)
+                {
+                    return new long[2] { num1, num2 };
+                }
+                else
+                {
+                    var gcd = LcmAndGcdByEuclideanAlgo(num2, num1 - num2)[1];
+                    return new long[2] { (num1 * num2)/gcd, gcd};
+                }
+            }
+            else
+            {
+                if(num2 % num1 == 0)
+                {
+                    return new long[2] { num2, num1 };
+                }
+                else
+                {
+                    var gcd = LcmAndGcdByEuclideanAlgo(num1, num2 - num1)[1];
+                    return new long[2] { (num1 * num2) / gcd, gcd };
+                }
+            }
+        }
+
+        private static int[] LcmAndGcdByPrimeFactors(int num1, int num2)
+        {
+            var num1PrimeFactors = FindPrimeFactors(num1);
+            var num2PrimeFactors = FindPrimeFactors(num2);
+
+            var commonFactors = new List<int>();
+
+            // Finding common factors and removing that from num2 factors
+            foreach (var factor in num1PrimeFactors)
+            {
+                if (num2PrimeFactors.Contains(factor))
+                {
+                    num2PrimeFactors.Remove(factor);
+                    commonFactors.Add(factor);
+                }
+            }
+
+            var lcm = 1;
+            var gcd = 1;
+
+            // Removing common factors from num1 factors and using the same loop
+            // to find the product of all factors of common factors
+            foreach (var factor in commonFactors)
+            {
+                num1PrimeFactors.Remove(factor);
+                lcm = lcm * factor;
+            }
+
+            // since gcd is product of all common factors, the value of lcm at this point is gcd
+            gcd = lcm;
+
+            // Repeating the same step for num1 and num2 prime factors (common factors removed)
+            foreach (var factor in num1PrimeFactors)
+            {
+                lcm = lcm * factor;
+            }
+
+            foreach (var factor in num2PrimeFactors)
+            {
+                lcm = lcm * factor;
+            }
+
+            return new int[2] { lcm, gcd };
         }
 
         private static List<int> FindPrimeFactors(int num)

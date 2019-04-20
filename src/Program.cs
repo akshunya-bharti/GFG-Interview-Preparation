@@ -16,7 +16,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Mathematical.ReverseDigits();
+            var problem = new Problems.Mathematical.LcmAndGcd();
 
             try
             {
@@ -85,7 +85,7 @@ namespace InterviewPreparation
                 Console.WriteLine($"\nExecuting Test No : {i + 1}");
                 Console.WriteLine($"Input     : {testInputs[i]}");
                 Console.WriteLine($"Expected  : {expectedOutputs[i]}");
-                Console.WriteLine($"Generated : {testOutputs[i]}");
+                Console.WriteLine($"Output    : {testOutputs[i]}");
 
                 if(expectedOutputs[i] == testOutputs[i])
                 {
