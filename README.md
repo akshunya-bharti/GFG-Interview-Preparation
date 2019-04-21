@@ -13,7 +13,7 @@ https://practice.geeksforgeeks.org/batch/Interview%20Preparation/
 **Points to remember while creating test cases text file:-**
 1. Provide total no of test cases (n) in first line.
 2. From 2nd line onwards provide the test case in each new line.
-3. After giving all th input lines write the word 'expected' in next line 
+3. After giving all the input lines write the word 'expected' in next line 
 4. Provide the expected outputs for the test cases in next n lines.
 <br />e.g. If you have 3 test cases for a program checking the number is even or not, your test file should look like this:-
 
