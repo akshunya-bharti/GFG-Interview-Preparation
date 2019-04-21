@@ -16,7 +16,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Mathematical.LcmAndGcd();
+            var problem = new Problems.Mathematical.SumOfDigitsPalindrome();
 
             try
             {
@@ -44,13 +44,19 @@ namespace InterviewPreparation
 
             int noOfTestCases = Convert.ToInt32(file.ReadLine());
 
-
             // Reading and storing expected outputs
             var expectedOutputs = new List<string>();
 
+            var expectedOutputsLineNo = 1;
+
+            while(file.ReadLine() != "expected")
+            {
+                expectedOutputsLineNo++;
+            }
+
             try
             {
-                for (int i = noOfTestCases + 1; i < (2 * noOfTestCases + 1); i++)
+                for (int i = expectedOutputsLineNo + 1; i < (noOfTestCases + expectedOutputsLineNo + 1); i++)
                 {
                     var line = File.ReadLines(filePath).Skip(i).Take(1).First();
                     expectedOutputs.Add(line);
