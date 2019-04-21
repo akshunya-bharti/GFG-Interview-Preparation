@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems\Arrays\ReverseAnArray.cs" />
     <Compile Include="Problems\Mathematical\ArmstrongNumbers.cs" />
     <Compile Include="Problems\Mathematical\BinaryToDecimal.cs" />
     <Compile Include="Problems\Mathematical\Factorial.cs" />
@@ -60,6 +61,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Problems\Arrays\ReverseAnArray.txt" />
     <Content Include="Problems\Mathematical\ArmstrongNumbers.txt" />
     <Content Include="Problems\Mathematical\BinaryToDecimal.txt" />
     <Content Include="Problems\Mathematical\Factorial.txt" />
