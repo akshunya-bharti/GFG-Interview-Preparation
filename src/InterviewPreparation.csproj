@@ -51,6 +51,7 @@
     <Compile Include="Problems\Mathematical\ReverseDigits.cs" />
     <Compile Include="Problems\Mathematical\SumOfDigitsPalindrome.cs" />
     <Compile Include="Problems\Problem.cs" />
+    <Compile Include="Problems\Sample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
