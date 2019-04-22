@@ -16,7 +16,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Arrays.ReverseAnArray();
+            var problem = new Problems.Arrays.RotateArray();
 
             try
             {
