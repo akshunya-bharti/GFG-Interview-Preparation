@@ -25,3 +25,8 @@ https://practice.geeksforgeeks.org/batch/Interview%20Preparation/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yes<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No<br />
+<br />
+**To add a new problem:-**<br />
+
+A sample problem file 'Sample.cs' has been provided at src/Problems/ <br />
+It is a template file which can be reused when writing a new problem class file. Follow the comments in the file to identify all the places where modification is required.
