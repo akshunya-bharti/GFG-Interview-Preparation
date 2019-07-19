@@ -16,7 +16,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Arrays.ProductArray();
+            var problem = new Problems.Arrays.WaveArray();
 
             try
             {

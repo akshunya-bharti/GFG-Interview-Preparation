@@ -23,7 +23,6 @@ namespace InterviewPreparation.Problems
             for (int i = 0; i < noOfTestCases; i++)
             {
                 var line = file.ReadLine();
-                var inputNumberInt = Convert.ToInt32(line);
                 TestInputs.Add(line);
 
                 /*

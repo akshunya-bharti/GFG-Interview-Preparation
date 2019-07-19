@@ -47,6 +47,7 @@
     <Compile Include="Problems\Arrays\ProductArray.cs" />
     <Compile Include="Problems\Arrays\ReverseAnArray.cs" />
     <Compile Include="Problems\Arrays\RotateArray.cs" />
+    <Compile Include="Problems\Arrays\WaveArray.cs" />
     <Compile Include="Problems\Mathematical\ArmstrongNumbers.cs" />
     <Compile Include="Problems\Mathematical\BinaryToDecimal.cs" />
     <Compile Include="Problems\Mathematical\Factorial.cs" />
@@ -68,6 +69,7 @@
     <Content Include="Problems\Arrays\ProductArray.txt" />
     <Content Include="Problems\Arrays\ReverseAnArray.txt" />
     <Content Include="Problems\Arrays\RotateArray.txt" />
+    <Content Include="Problems\Arrays\WaveArray.txt" />
     <Content Include="Problems\Mathematical\ArmstrongNumbers.txt" />
     <Content Include="Problems\Mathematical\BinaryToDecimal.txt" />
     <Content Include="Problems\Mathematical\Factorial.txt" />
