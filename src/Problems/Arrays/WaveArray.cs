@@ -57,7 +57,7 @@ namespace InterviewPreparation.Problems.Arrays
                 array[i] = temp;
             }
 
-            var waveArray = String.Join(" ", array);
+            var waveArray = System.String.Join(" ", array);
 
             return waveArray;
         }

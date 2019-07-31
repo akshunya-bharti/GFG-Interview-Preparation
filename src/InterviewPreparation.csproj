@@ -58,6 +58,7 @@
     <Compile Include="Problems\Mathematical\SumOfDigitsPalindrome.cs" />
     <Compile Include="Problems\Problem.cs" />
     <Compile Include="Problems\Sample.cs" />
+    <Compile Include="Problems\String\NonRepeatingCharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +80,7 @@
     <Content Include="Problems\Mathematical\PrimeNumber.txt" />
     <Content Include="Problems\Mathematical\ReverseDigits.txt" />
     <Content Include="Problems\Mathematical\SumOfDigitsPalindrome.txt" />
+    <Content Include="Problems\String\NonRepeatingCharacter.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
