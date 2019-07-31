@@ -16,7 +16,7 @@ namespace InterviewPreparation
             stopWatch.Start();
 
             // Provide the Class Name of the problem you want to execute
-            var problem = new Problems.Arrays.WaveArray();
+            var problem = new Problems.Arrays.RemoveDuplicatesUnsortedArray();
 
             try
             {
@@ -89,9 +89,9 @@ namespace InterviewPreparation
             for(int i=0; i<count; i++)
             {
                 Console.WriteLine($"\nExecuting Test No : {i + 1}");
-                Console.WriteLine($"Input     : {testInputs[i]}");
-                Console.WriteLine($"Expected  : {expectedOutputs[i]}");
-                Console.WriteLine($"Output    : {testOutputs[i]}");
+                Console.WriteLine($"Input     : [{testInputs[i]}]");
+                Console.WriteLine($"Expected  : [{expectedOutputs[i]}]");
+                Console.WriteLine($"Output    : [{testOutputs[i]}]");
 
                 if(expectedOutputs[i] == testOutputs[i])
                 {

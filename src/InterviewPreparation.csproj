@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Problems\Arrays\MajorityElement.cs" />
     <Compile Include="Problems\Arrays\ProductArray.cs" />
+    <Compile Include="Problems\Arrays\RemoveDuplicatesUnsortedArray.cs" />
     <Compile Include="Problems\Arrays\ReverseAnArray.cs" />
     <Compile Include="Problems\Arrays\RotateArray.cs" />
     <Compile Include="Problems\Arrays\WaveArray.cs" />
@@ -67,6 +68,7 @@
   <ItemGroup>
     <Content Include="Problems\Arrays\MajorityElement.txt" />
     <Content Include="Problems\Arrays\ProductArray.txt" />
+    <Content Include="Problems\Arrays\RemoveDuplicatesUnsortedArray.txt" />
     <Content Include="Problems\Arrays\ReverseAnArray.txt" />
     <Content Include="Problems\Arrays\RotateArray.txt" />
     <Content Include="Problems\Arrays\WaveArray.txt" />
