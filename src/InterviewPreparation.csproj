@@ -58,6 +58,7 @@
     <Compile Include="Problems\Mathematical\SumOfDigitsPalindrome.cs" />
     <Compile Include="Problems\Problem.cs" />
     <Compile Include="Problems\Sample.cs" />
+    <Compile Include="Problems\Searching\MissingNumber.cs" />
     <Compile Include="Problems\String\NonRepeatingCharacter.cs" />
     <Compile Include="Problems\String\ReverseWords.cs" />
     <Compile Include="Program.cs" />
@@ -81,6 +82,7 @@
     <Content Include="Problems\Mathematical\PrimeNumber.txt" />
     <Content Include="Problems\Mathematical\ReverseDigits.txt" />
     <Content Include="Problems\Mathematical\SumOfDigitsPalindrome.txt" />
+    <Content Include="Problems\Searching\MissingNumber.txt" />
     <Content Include="Problems\String\NonRepeatingCharacter.txt" />
     <Content Include="Problems\String\ReverseWords.txt" />
   </ItemGroup>
