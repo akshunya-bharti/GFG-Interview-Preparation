@@ -1,0 +1,10 @@
+﻿4
+i.like.this.program.very.much
+pqr.mno
+a
+a.b
+expected
+much.very.program.this.like.i
+mno.pqr
+a
+b.a
