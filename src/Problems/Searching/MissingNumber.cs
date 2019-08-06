@@ -28,7 +28,7 @@ namespace InterviewPreparation.Problems.Searching
                 TestInputs.Add(line2);
 
                 // Finally add the result to Test outputs 
-                var result = FindMissingNumber(Convert.ToInt32(line), line2);
+                var result = FindMissingNumberUsingXor(Convert.ToInt32(line), line2);
                 TestOutputs.Add(result.ToString());
             }
 
@@ -53,6 +53,23 @@ namespace InterviewPreparation.Problems.Searching
             }
 
             return sum;
+        }
+
+        private static int FindMissingNumberUsingXor(int count, string inputStr)
+        {
+            var inputStrArry = inputStr.Split(' ');
+            var inputXor = Convert.ToInt32(inputStrArry[0]);
+            var allXor = 1;
+
+            for(int i = 1; i < count - 1; i++)
+            {
+                inputXor = inputXor ^ Convert.ToInt32(inputStrArry[i]);
+                allXor = allXor ^ (i + 1);
+            }
+
+            allXor = allXor ^ count;
+
+            return inputXor ^ allXor;
         }
     }
 }
